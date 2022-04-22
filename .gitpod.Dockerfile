@@ -7,3 +7,4 @@ RUN bash \
         echo '\t[[ ! -d $CONTAINER_DIR ]] && sudo mkdir -p $CONTAINER_DIR && sudo ln -s / $CONTAINER_DIR/rootfs'; \
         echo 'fi'; } >> /home/gitpod/.bashrc.d/110-dotnet
 RUN chmod +x /home/gitpod/.bashrc.d/110-dotnet
+RUN curl -fsSL https://dot.net/v1/dotnet-install.sh | bash /dev/stdin --version 2.1.818 --install-dir /home/gitpod/dotnet # install dotnet 2.1
