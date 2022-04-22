@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using PollBall.Services;
 
+// random comment
+
 namespace PollBall
 {
     public class Startup
